@@ -14,6 +14,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f1xx.h"
+#include "pins.h"
 #include <stdint.h>
 #include <stdio.h>
 
@@ -27,12 +28,10 @@ extern uint8_t rc_data[];
 #define APB2CLK (SYSCLK)	 // APB2 = 72 MHz
 #define Baudrate 115200
 
-#define rc_data_size 5
+#define RX_DATA_SIZE 5
 
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions ------------------------------------------------------- */
-
-void DMA1_Channel6_IRQHandler(void);
 
 #endif /* main_h */
 

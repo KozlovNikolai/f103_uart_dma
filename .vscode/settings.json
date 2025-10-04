@@ -2,6 +2,7 @@
     "files.associations": {
         "stm32f1xx.h": "c",
         "main.h": "c",
-        "uart_dma.h": "c"
+        "uart_dma.h": "c",
+        "*.bak": "c"
     }
 }

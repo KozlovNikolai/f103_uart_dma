@@ -8,5 +8,6 @@
 
 void UART2_DMA_Init(void);
 void uart2_write(int ch);
-
+/* Новая функция */
+uint16_t UART2_DMA_ReceivedLength(void);
 #endif
