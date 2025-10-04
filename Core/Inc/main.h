@@ -14,11 +14,25 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f1xx.h"
+#include <stdint.h>
+#include <stdio.h>
 
 /* Exported types ------------------------------------------------------------*/
+extern volatile uint8_t done;
+extern uint8_t rc_data[];
+
 /* Exported constants --------------------------------------------------------*/
+#define SYSCLK 72000000UL
+#define APB1CLK (SYSCLK / 2) // APB1 = 36 MHz
+#define APB2CLK (SYSCLK)	 // APB2 = 72 MHz
+#define Baudrate 115200
+
+#define rc_data_size 5
+
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions ------------------------------------------------------- */
+
+void DMA1_Channel6_IRQHandler(void);
 
 #endif /* main_h */
 

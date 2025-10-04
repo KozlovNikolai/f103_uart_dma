@@ -17,6 +17,7 @@
       "browse": {
         "path": [
           "${workspaceFolder}/Core/Inc",
+          "${workspaceFolder}/Core/Src",
           "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
           "${workspaceFolder}/Drivers/CMSIS/Include"
         ],
